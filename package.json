@@ -1,7 +1,7 @@
 {
-  "name": "viable-data-tasklist",
+  "name": "tasklist",
   "version": "0.0.1",
-  "description": "Viable Data Tasklist UI for managing tasks and processes",
+  "description": "Tasklist UI for managing tasks and processes",
   "author": "",
   "license": "",
   "scripts": {
