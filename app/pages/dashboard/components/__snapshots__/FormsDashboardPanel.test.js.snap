@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Procedures Dashboard Panel renders forms dashboard panel 1`] = `
+<FormsDashboardPanel
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <li
+    className="__card govuk-grid-column-one-third"
+    id="proceduresPanel"
+    style={
+      Object {
+        "marginBottom": "30px",
+      }
+    }
+  >
+    <a
+      className="card__body"
+      href="/forms"
+      id="proceduresPageLink"
+      onClick={[Function]}
+    >
+      <span
+        className="govuk-!-font-size-36 govuk-!-font-weight-bold"
+      >
+        Forms
+      </span>
+    </a>
+    <div
+      className="card__footer"
+    >
+      <span
+        className="govuk-!-font-size-19"
+      >
+        Submit a form
+      </span>
+    </div>
+  </li>
+</FormsDashboardPanel>
+`;

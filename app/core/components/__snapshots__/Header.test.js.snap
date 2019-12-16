@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+<header
+  className="govuk-header"
+  data-module="header"
+  role="banner"
+>
+  <div
+    className="govuk-header__container govuk-width-container"
+  >
+    <div
+      className="govuk-header__content"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="govuk-grid-row"
+      >
+        <div
+          className="govuk-grid-column-one-half"
+        >
+          <a
+            className="govuk-header__link govuk-header__link--service-name"
+            href="/dashboard"
+            id="dashboard"
+            onClick={[Function]}
+          >
+            Central Operations Platform
+          </a>
+        </div>
+        <div
+          className="govuk-grid-column-one-half header-nav"
+        >
+          <a
+            className="govuk-header__link header-nav__link"
+            href="/submit-a-form/edit-your-profile"
+            id="profile"
+            onClick={[Function]}
+          >
+            My profile
+          </a>
+          <a
+            className="govuk-header__link header-nav__link"
+            href="https://support.cop.homeoffice.gov.uk/servicedesk/customer/portal/3"
+            id="support"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Support
+          </a>
+          <a
+            className="govuk-header__link header-nav__link"
+            href="/logout"
+            id="logout"
+            onClick={[Function]}
+          >
+            Sign out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;
