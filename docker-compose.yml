@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  platform_ui:
+    image: quay.io/ukhomeofficedigital/cop-private-workflow-tasklist:develop
+    restart: on-failure
+    container_name: platform_ui
+    environment:
+      UI_ENVIRONMENT: "LOCAL"
+      UI_VERSION: "ALPHA"
+      AUTH_REALM: "refdata"
+      AUTH_URL: "http://keycloak:8080/keycloak/auth"
+      AUTH_CLIENT_ID: "platform-ui"
+      AUTH_ACCESS_ROLE: ""
+      PROTOCOL: ${PROTOCOL}
+      EXT_DOMAIN: ${EXT_DOMAIN}
+      FORM_SERVICE_URL: "${PROTOCOL}${FORMIO_SERVER_NAME}.${EXT_DOMAIN}"
+      OPERATIONAL_DATA_URL: "${PROTOCOL}${OPERATIONAL_POSTGREST_NAME}.${EXT_DOMAIN}"
+      REPORT_SERVICE_URL: "${PROTOCOL}${REPORTING_SERVER_NAME}.${EXT_DOMAIN}"
+      TRANSLATION_SERVICE_URL: "${PROTOCOL}${TRANSLATION_SERVER_NAME}.${EXT_DOMAIN}"
+      WORKFLOW_SERVICE_URL: "${PROTOCOL}${WORKFLOW_SERVER_NAME}.${EXT_DOMAIN}"
+
+networks:
+  default:
+    external:
+      name: local_dev

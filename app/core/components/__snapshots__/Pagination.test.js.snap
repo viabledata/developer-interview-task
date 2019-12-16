@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders pagination 1`] = `
+<Pagination
+  initialPage={1}
+  items={
+    Immutable.List [
+      Immutable.Map {
+        "id": "itemId0",
+        "name": "itemName0",
+      },
+      Immutable.Map {
+        "id": "itemId1",
+        "name": "itemName1",
+      },
+      Immutable.Map {
+        "id": "itemId2",
+        "name": "itemName2",
+      },
+      Immutable.Map {
+        "id": "itemId3",
+        "name": "itemName3",
+      },
+      Immutable.Map {
+        "id": "itemId4",
+        "name": "itemName4",
+      },
+      Immutable.Map {
+        "id": "itemId5",
+        "name": "itemName5",
+      },
+      Immutable.Map {
+        "id": "itemId6",
+        "name": "itemName6",
+      },
+      Immutable.Map {
+        "id": "itemId7",
+        "name": "itemName7",
+      },
+      Immutable.Map {
+        "id": "itemId8",
+        "name": "itemName8",
+      },
+      Immutable.Map {
+        "id": "itemId9",
+        "name": "itemName9",
+      },
+      Immutable.Map {
+        "id": "itemId10",
+        "name": "itemName10",
+      },
+      Immutable.Map {
+        "id": "itemId11",
+        "name": "itemName11",
+      },
+      Immutable.Map {
+        "id": "itemId12",
+        "name": "itemName12",
+      },
+      Immutable.Map {
+        "id": "itemId13",
+        "name": "itemName13",
+      },
+      Immutable.Map {
+        "id": "itemId14",
+        "name": "itemName14",
+      },
+      Immutable.Map {
+        "id": "itemId15",
+        "name": "itemName15",
+      },
+      Immutable.Map {
+        "id": "itemId16",
+        "name": "itemName16",
+      },
+      Immutable.Map {
+        "id": "itemId17",
+        "name": "itemName17",
+      },
+      Immutable.Map {
+        "id": "itemId18",
+        "name": "itemName18",
+      },
+      Immutable.Map {
+        "id": "itemId19",
+        "name": "itemName19",
+      },
+      Immutable.Map {
+        "id": "itemId20",
+        "name": "itemName20",
+      },
+      Immutable.Map {
+        "id": "itemId21",
+        "name": "itemName21",
+      },
+      Immutable.Map {
+        "id": "itemId22",
+        "name": "itemName22",
+      },
+      Immutable.Map {
+        "id": "itemId23",
+        "name": "itemName23",
+      },
+      Immutable.Map {
+        "id": "itemId24",
+        "name": "itemName24",
+      },
+      Immutable.Map {
+        "id": "itemId25",
+        "name": "itemName25",
+      },
+      Immutable.Map {
+        "id": "itemId26",
+        "name": "itemName26",
+      },
+      Immutable.Map {
+        "id": "itemId27",
+        "name": "itemName27",
+      },
+      Immutable.Map {
+        "id": "itemId28",
+        "name": "itemName28",
+      },
+      Immutable.Map {
+        "id": "itemId29",
+        "name": "itemName29",
+      },
+      Immutable.Map {
+        "id": "itemId30",
+        "name": "itemName30",
+      },
+      Immutable.Map {
+        "id": "itemId31",
+        "name": "itemName31",
+      },
+      Immutable.Map {
+        "id": "itemId32",
+        "name": "itemName32",
+      },
+      Immutable.Map {
+        "id": "itemId33",
+        "name": "itemName33",
+      },
+      Immutable.Map {
+        "id": "itemId34",
+        "name": "itemName34",
+      },
+      Immutable.Map {
+        "id": "itemId35",
+        "name": "itemName35",
+      },
+      Immutable.Map {
+        "id": "itemId36",
+        "name": "itemName36",
+      },
+      Immutable.Map {
+        "id": "itemId37",
+        "name": "itemName37",
+      },
+      Immutable.Map {
+        "id": "itemId38",
+        "name": "itemName38",
+      },
+      Immutable.Map {
+        "id": "itemId39",
+        "name": "itemName39",
+      },
+      Immutable.Map {
+        "id": "itemId40",
+        "name": "itemName40",
+      },
+      Immutable.Map {
+        "id": "itemId41",
+        "name": "itemName41",
+      },
+      Immutable.Map {
+        "id": "itemId42",
+        "name": "itemName42",
+      },
+      Immutable.Map {
+        "id": "itemId43",
+        "name": "itemName43",
+      },
+      Immutable.Map {
+        "id": "itemId44",
+        "name": "itemName44",
+      },
+      Immutable.Map {
+        "id": "itemId45",
+        "name": "itemName45",
+      },
+      Immutable.Map {
+        "id": "itemId46",
+        "name": "itemName46",
+      },
+      Immutable.Map {
+        "id": "itemId47",
+        "name": "itemName47",
+      },
+      Immutable.Map {
+        "id": "itemId48",
+        "name": "itemName48",
+      },
+      Immutable.Map {
+        "id": "itemId49",
+        "name": "itemName49",
+      },
+    ]
+  }
+  onChangePage={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Immutable.List [
+            Immutable.Map {
+              "id": "itemId0",
+              "name": "itemName0",
+            },
+            Immutable.Map {
+              "id": "itemId1",
+              "name": "itemName1",
+            },
+            Immutable.Map {
+              "id": "itemId2",
+              "name": "itemName2",
+            },
+            Immutable.Map {
+              "id": "itemId3",
+              "name": "itemName3",
+            },
+            Immutable.Map {
+              "id": "itemId4",
+              "name": "itemName4",
+            },
+            Immutable.Map {
+              "id": "itemId5",
+              "name": "itemName5",
+            },
+            Immutable.Map {
+              "id": "itemId6",
+              "name": "itemName6",
+            },
+            Immutable.Map {
+              "id": "itemId7",
+              "name": "itemName7",
+            },
+            Immutable.Map {
+              "id": "itemId8",
+              "name": "itemName8",
+            },
+            Immutable.Map {
+              "id": "itemId9",
+              "name": "itemName9",
+            },
+          ],
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  pageSize={10}
+>
+  <div
+    className="govuk-grid-row"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className="govuk-grid-column-full"
+    >
+      <div
+        className="pagination__summary govuk-!-font-size-19"
+      >
+        Showing 1 - 5 of 50 results
+      </div>
+      <nav
+        aria-label="comments-pagination"
+        role="navigation"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <ul
+          className="pagination govuk-!-font-size-19"
+        >
+          <li
+            className="pagination__item"
+          >
+            <a
+              className="pagination__link"
+              onClick={[Function]}
+            >
+              <span
+                aria-hidden="true"
+                role="presentation"
+              >
+                «
+              </span>
+               Previous
+            </a>
+          </li>
+          <li
+            className="pagination__item"
+            key="0"
+          >
+            <a
+              className="pagination__link current"
+              onClick={[Function]}
+            >
+              1
+            </a>
+          </li>
+          <li
+            className="pagination__item"
+            key="1"
+          >
+            <a
+              className="pagination__link "
+              onClick={[Function]}
+            >
+              2
+            </a>
+          </li>
+          <li
+            className="pagination__item"
+            key="2"
+          >
+            <a
+              className="pagination__link "
+              onClick={[Function]}
+            >
+              3
+            </a>
+          </li>
+          <li
+            className="pagination__item"
+            key="3"
+          >
+            <a
+              className="pagination__link "
+              onClick={[Function]}
+            >
+              4
+            </a>
+          </li>
+          <li
+            className="pagination__item"
+            key="4"
+          >
+            <a
+              className="pagination__link "
+              onClick={[Function]}
+            >
+              5
+            </a>
+          </li>
+          <li
+            className="pagination__item"
+          >
+            <a
+              className="pagination__link"
+              onClick={[Function]}
+            >
+              Next 
+              <span
+                aria-hidden="true"
+                role="presentation"
+              >
+                »
+              </span>
+               
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</Pagination>
+`;

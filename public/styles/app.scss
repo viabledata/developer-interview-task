@@ -1,0 +1,92 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../node_modules/formiojs/dist/formio.full.css";
+@import "../../node_modules/govuk-frontend/govuk/all";
+@import "./card";
+@import "./buttons";
+@import "base/colors";
+@import "components/footer";
+
+a {
+  cursor: pointer;
+}
+html {
+  background-color: govuk-colour("light-grey");
+}
+
+body {
+  overscroll-behavior-y: none;
+  font-family: "nta", Arial, sans-serif;
+}
+
+iframe {
+  border: 0;
+}
+
+.padding {
+  padding-left: 15px;
+}
+
+.sk-spinner {
+  transform: scale(2);
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+.govuk-accordion-no-bottom {
+  border-bottom: none !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sk-spinner {
+    transform: scale(0.85);
+  }
+}
+
+.tasksGrouping {
+  margin-bottom: 2em;
+}
+
+.data-item {
+  display: block;
+  line-height: 1;
+}
+
+input:disabled {
+  background: govuk-colour("light-grey");
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.header-nav {
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.header-nav__link {
+  margin-left: 20px;
+}
+
+.govuk-header__link--service-name {
+  margin-left: -15px;
+}
+//
+//li.govuk-breadcrumbs__list-item.active {
+//  text-decoration: underline;
+//}
