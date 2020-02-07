@@ -41,6 +41,7 @@ export class App extends React.Component {
   }
 }
 
+// does this add some indication that you're on a non production environment?
 const AppBanner = props => {
   const { appConfig } = props;
   const environment = () => {

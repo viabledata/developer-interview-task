@@ -1,12 +1,18 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// allows you to manage moment plug in I believe this lets you strip out unneeded localisation files
 const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 
 const sourcePath = path.join(__dirname, './app');
 const buildDirectory = path.join(__dirname, './dist');
+
+// think this is for minifying css for filesize reduction?
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+// think this is for hashing the chunks
 const { HashedModuleIdsPlugin } = require('webpack');
 
 const hashing = process.env.NODE_ENV === 'production' ? 'chunkhash' : 'hash';
@@ -14,10 +20,12 @@ console.log(`content hashing: ${hashing}`);
 
 module.exports = {
   resolve: {
+    // gets sourcePath name from constants : path.join(__dirname, './app'); in this case
     extensions: ['.js', '.jsx', '.json'],
     modules: [path.resolve(__dirname), 'node_modules', sourcePath],
   },
   output: {
+    // gets buildDirectory from constants : const buildDirectory = path.join(__dirname, './dist');
     path: buildDirectory,
     filename: `[name].[${hashing}].js`,
     chunkFilename: `[name].[${hashing}].chunk.js`,

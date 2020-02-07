@@ -41,7 +41,7 @@ module.exports = webpackMerge(common, {
     contentBase: 'public/',
     historyApiFallback: true,
     hot: true,
-    open: true,
+    open: false,
     port: `${port}`,
     publicPath: common.output.publicPath,
     stats: { colors: true },
