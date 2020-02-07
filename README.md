@@ -1,5 +1,13 @@
 # developer-interview-task
-A technical task for our developer interviews    
+A technical task for our developer interviews  
+
+----
+
+## JenniKate Notes
+
+
+
+----
 
 ## Running in development
 
