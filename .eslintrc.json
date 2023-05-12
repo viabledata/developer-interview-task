@@ -1,15 +1,50 @@
 {
-  "extends": "airbnb",
   "env": {
-    "browser": true,
-    "jest": true,
-    "node": true
+      "browser": true,
+      "es2021": true,
+      "node": true,
+      "jest/globals": true
   },
-  "parser": "babel-eslint",
+  "extends": [
+      "eslint:recommended",
+      "airbnb", "airbnb/hooks",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:jsx-a11y/recommended",
+      "plugin:jest/recommended"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "babel",
+      "jest"
+  ],
   "rules": {
-    "arrow-parens": [2, "as-needed"],
-    "react/jsx-fragments": 0,
-    "react/forbid-prop-types": 0,
-    "react/jsx-one-expression-per-line": 0
-  }
+    "eol-last": ["error", "always"],
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" } ],
+    "max-len": ["error", { "code": 250, "ignoreStrings": true, "ignoreComments": true, "ignorePattern": "^path " }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "react-hooks/exhaustive-deps": "off",
+    "react/function-component-definition": [2, {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+    }],
+    "react/jsx-one-expression-per-line":  "off",
+    "react/forbid-prop-types": "off",
+    "react/require-default-props": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.spec.js",
+        "*.spec.jsx"
+      ]
+    }
+  ]
 }

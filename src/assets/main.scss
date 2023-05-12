@@ -1,0 +1,263 @@
+@import './feedbackBanner.scss';
+@import './loadingSpinner.scss';
+@import './table.scss';
+
+// ===================
+// Layout Overrides
+// ===================
+body {
+  font-weight: 400;
+  margin: 0px; // reset margin to 0 as it was setting to the browser user-agent px size
+  background-color: thisApp-colour("light-grey"); // set body to footer colour (light grey) so that if a page is very short we don't get white background under the footer
+}
+
+#root {
+  background: thisApp-colour("white"); // set root div to content colour (white) as a default
+}
+
+/* Add small space between crown and text in logo in header */
+.thisApp-header__logotype-text {
+  margin-left: 2px;
+}
+
+/* Apply 'hidden' state to elements for nav menu */
+@media screen and (min-width: 770px) {
+  .thisApp-header__menu-button {
+    display: none !important;
+  }
+
+  .thisApp-header__navigation-list {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .thisApp-header__navigation-list {
+    display: none !important;
+  }
+
+  .thisApp-header__navigation-list--open {
+    display: block !important;
+  }
+}
+
+// ===================
+// Form Overrides
+// ===================
+/* thisApp-inset-text has a top margin that creates too much whitespace when combined with the h1 bottom-margin */
+.below-h1 .thisApp-inset-text {
+  margin-top: 0px;
+}
+
+.phoneNumber-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.phoneNumber-input_country-code {
+  margin-right: 0.5rem;
+}
+
+// ========================
+// Button & Link Overrides
+// ========================
+.thisApp-button--text {
+  font-size: inherit;
+  text-decoration: underline;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.thisApp-button--text:hover {
+  text-decoration: underline;
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.thisApp-button--text:active {
+  text-decoration: underline;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.thisApp-button--text:focus {
+  outline: 3px solid transparent;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+.thisApp-error-summary__list .thisApp-button--text {
+  font-weight: 700;
+  text-align: left;
+}
+
+.thisApp-error-summary__list .thisApp-button--text:hover {
+  font-weight: 700;
+  color: #942514;
+}
+
+.thisApp-error-summary__list .thisApp-button--text:focus {
+  font-weight: 700;
+}
+
+@media (min-width: 769px) {
+  .float {
+    float: right;
+  }
+}
+
+
+// ================================================
+// File field level error, additional styling
+// ================================================
+.thisApp-inline {
+  display: inline
+}
+
+.thisApp-border-bottom {
+  border-bottom: 1px solid #b1b4b6;
+  padding: 10px 20px 10px 0;
+  margin-bottom: 20px
+}
+
+.text-align--left {
+  text-align: left,
+}
+
+
+// ================================================
+// Task list patterns from http://this-place
+// ================================================
+
+.app-task-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.app-task-list__section {
+  display: table;
+}
+
+.app-task-list__section-number {
+  display: table-cell;
+}
+
+.app-task-list__items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app-task-list__item {
+  margin-bottom: 0 !important;
+  padding-top: thisApp-spacing(2);
+  padding-bottom: thisApp-spacing(2);
+}
+
+.app-task-list__task-name {
+  display: block;
+}
+
+// The `app-task-list__task-completed` class was previously used on the task
+// list for the completed tag (changed in 86c90ec) – it's still included here to
+// avoid breaking task lists in existing prototypes.
+.app-task-list__tag,
+.app-task-list__task-completed {
+  margin-top: thisApp-spacing(2);
+  margin-bottom: thisApp-spacing(1);
+}
+
+// ================================================
+// Styles for displaying declarations on /your-pages page
+// ================================================
+
+.your-pages__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-grey__border {
+  border-bottom: 1px solid #b1b4b6;
+  margin: 0
+}
+
+.dark-grey__border {
+  border-bottom: solid 1px #0b0c0c;
+}
+
+.facet-tags__container {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.facet-tags__group {
+  display: none;
+}
+
+.facet-tags__wrapper {
+  vertical-align: middle;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.facet-tag {
+  display: table-cell;
+  position: relative;
+  padding: 5px;
+  border: 1px solid #505a5f;
+  border-radius: 5px;
+  background-color: #f3f2f1;
+}
+
+.reported-pages__text {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.reported-pages-margin--top {
+  margin-top: 15px;
+}
+
+.thisApp-tag {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 641px) {
+    .your-pages__flex {
+      display: flex;
+      flex-direction: row;
+    }
+
+  .facet-tags__group {
+    background-color: #f3f2f1;
+    display: block;
+  }
+
+  .reported-pages-margin--top {
+    margin-top: 0;
+  }
+
+  .reported-pages__columns {
+    width: 20%;
+  }
+
+  .small-link-text {
+    font-size: 1rem;
+  }
+}
+
+// ================================================
+// Region image map
+// ================================================
+
+.region-map {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
