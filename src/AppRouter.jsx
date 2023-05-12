@@ -37,6 +37,7 @@ const ItemSample = lazy(() => import('./pages/SamplePages/ItemSample'));
 const ItemDetailed = lazy(() => import('./pages/SamplePages/ItemDetailed'));
 const ItemMixed = lazy(() => import('./pages/SamplePages/ItemMixed'));
 const ItemAlone = lazy(() => import('./pages/SamplePages/ItemAlone'));
+const MultiFileUploader = lazy(() => import('./pages/SamplePages/MultiFileUploader'));
 
 const AppRouter = () => {
   document.title = SERVICE_NAME;
@@ -52,6 +53,7 @@ const AppRouter = () => {
           <Route path={REGISTER_EMAIL_URL} element={<RegisterEmailAddress />} />
           <Route path={SIGN_IN_URL} element={<SignIn />} />
           <Route path="sample-path/5" element={<APage />} />
+          <Route path="sample/multi-file" element={<MultiFileUploader />} />
 
           <Route element={<ProtectedRoutes isPermittedToView={isPermittedToView} />}>
             <Route path={PAGE_ONE_URL} element={<YourPageOne />} />
