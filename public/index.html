@@ -1,71 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Central Operations Platform</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="blue"/>
-    <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  <meta name="robots" content="noindex nofollow" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viable Data Tech Task</title>
+  <meta name="theme-color" content="#0b0c0c" />
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="/assets/images/icon.svg" color="#0b0c0c"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icon-152x152.png">
+  <link rel="apple-touch-icon" href="/assets/images/icon.png">
+  <meta property="og:image" content="/assets/images/opengraph-image.png">
+  <!-- Fallback for no JavaScript -->
+  <noscript><link rel="stylesheet" type="text/css" href="/assets/css/noscript.css"></noscript>
 </head>
-<body>
-<script>
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-</script>
-<div id="root">
-    <style>
-        .container {
-            font-family: "nta", Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .initialContent {
-            width: 220px;
-            height: 80px;
-        }
-
-        .initialContent .loadingLine {
-            float: left;
-            width: 140px;
-            height: 16px;
-            margin-top: 12px;
-            border-radius: 7px;
-            background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
-            background-size: 600px;
-            animation: shine-lines 1.6s infinite linear;
-        }
-
-        .initialContent .loadingLine ~ .loadingLine {
-            background-color: #ddd;
-        }
-
-        @keyframes shine-lines {
-            0% {
-                background-position: -100px;
-            }
-            40%, 100% {
-                background-position: 140px;
-            }
-        }
-
-    </style>
-    <div class="container">
-        <noscript>
-            <p>Your browser does not support JavaScript. This is required for this application</p>
-        </noscript>
-        <div class="initialContent">
-            <div class="loadingLine"></div>
-            <div class="loadingLine"></div>
-            <div class="loadingLine"></div>
-            <div class="loadingLine"></div>
-        </div>
-    </div>
-</div>
-</body>
+<body className="template__body">  
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+  <!-- Fallback for no JavaScript goes here -->
+  <div id="root"></div> 
+</body> 
 </html>

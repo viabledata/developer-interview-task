@@ -1,7 +1,25 @@
-.idea
-node_modules
-dist
+# OS, ENV variables, IDE
 .env
-/coverage
-**/**/.DS_Store
-*.swp
+.env.test
+.vscode
+ .idea/
+.DS_Store
+# Directories
+coverage/
+dist/
+node_modules/
+.cache
+.eslintcache
+.npm
+# Files
+*.log*
+cypress-env.sh
+cypress/screenshots
+cypress/videos
+cypress/report
+mochawesome-report/
+axe.csv
+
+# Decrypted YAML files
+helm/secrets/*.yaml
+/cypress/config/cypress/
